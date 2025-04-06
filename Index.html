@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LuxuryEstates | Premium Real Estate</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- ===== HEADER ===== -->
+    <header>
+      <div class="container header-container">
+        <a href="index.html" class="logo">Luxury<span>Estates</span></a>
+
+        <nav class="desktop-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="properties.html">Properties</a></li>
+            <li><a href="agents.html">Agents</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <button class="mobile-menu-btn">☰</button>
+      </div>
+    </header>
+
+    <!-- ===== MOBILE MENU ===== -->
+    <div class="mobile-menu">
+      <div class="mobile-menu-header">
+        <a href="index.html" class="logo">Luxury<span>Estates</span></a>
+        <button class="mobile-menu-close">✕</button>
+      </div>
+
+      <nav class="mobile-menu-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="properties.html">Properties</a></li>
+          <li><a href="agents.html">Agents</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="menu-overlay"></div>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main>
+      <!-- Home Page (index.html) -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <h1>Find Your Dream Home Today</h1>
+            <p>
+              Discover premium properties in the most sought-after locations
+              worldwide. We combine local expertise with global standards.
+            </p>
+            <div class="hero-btns">
+              <a href="properties.html" class="btn btn-primary"
+                >Browse Properties</a
+              >
+              <a href="contact.html" class="btn btn-outline">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Property Search Form -->
+      <div class="container">
+        <div class="property-search">
+          <form class="search-form">
+            <div class="form-group">
+              <label for="location">Location</label>
+              <select id="location" class="form-control">
+                <option value="">Any Location</option>
+                <option value="new-york">New York</option>
+                <option value="los-angeles">Los Angeles</option>
+                <option value="miami">Miami</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="type">Property Type</label>
+              <select id="type" class="form-control">
+                <option value="">Any Type</option>
+                <option value="house">House</option>
+                <option value="apartment">Apartment</option>
+                <option value="villa">Villa</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="price">Price Range</label>
+              <select id="price" class="form-control">
+                <option value="">Any Price</option>
+                <option value="0-500000">$0 - $500,000</option>
+                <option value="500000-1000000">$500,000 - $1M</option>
+                <option value="1000000">$1M+</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>&nbsp;</label>
+              <button type="submit" class="btn btn-primary" style="width: 100%">
+                Search
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Featured Properties -->
+      <section class="section">
+        <div class="container">
+          <div class="section-title">
+            <h2>Featured Properties</h2>
+            <p>Handpicked selection of premium properties</p>
+          </div>
+
+          <div class="property-grid">
+            <!-- Property 1 -->
+            <div class="property-card">
+              <div class="property-img">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.PYY28va_X5Rw7JvRMZuJvQHaEk&pid=Api&P=0&h=180" alt="Modern Villa" />
+                <span class="property-badge">For Sale</span>
+              </div>
+              <div class="property-info">
+                <div class="property-price">$1,250,000</div>
+                <h3>Modern Villa in Beverly Hills</h3>
+                <p class="property-address">123 Sunset Blvd, Los Angeles, CA</p>
+                <div class="property-features">
+                  <span class="feature"><i>🛏️</i> 4 Beds</span>
+                  <span class="feature"><i>🚿</i> 3 Baths</span>
+                  <span class="feature"><i>📏</i> 3,200 sqft</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Property 2 -->
+            <div class="property-card">
+              <div class="property-img">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.vXmLY5v6LPxpZ7oA3xndMwHaEK&pid=Api&P=0&h=180" alt="Luxury Penthouse" />
+                <span class="property-badge">For Sale</span>
+              </div>
+              <div class="property-info">
+                <div class="property-price">$3,750,000</div>
+                <h3>Luxury Penthouse in Manhattan</h3>
+                <p class="property-address">
+                  456 Central Park West, New York, NY
+                </p>
+                <div class="property-features">
+                  <span class="feature"><i>🛏️</i> 3 Beds</span>
+                  <span class="feature"><i>🚿</i> 3.5 Baths</span>
+                  <span class="feature"><i>📏</i> 2,800 sqft</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Property 3 -->
+            <div class="property-card">
+              <div class="property-img">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.CqhNi3-bHx0qeP3i1fTB5wHaE8&pid=Api&P=0&h=180" alt="Waterfront Estate" />
+                <span class="property-badge">For Sale</span>
+              </div>
+              <div class="property-info">
+                <div class="property-price">$8,200,000</div>
+                <h3>Waterfront Estate in Miami</h3>
+                <p class="property-address">789 Ocean Drive, Miami, FL</p>
+                <div class="property-features">
+                  <span class="feature"><i>🛏️</i> 5 Beds</span>
+                  <span class="feature"><i>🚿</i> 6 Baths</span>
+                  <span class="feature"><i>📏</i> 6,500 sqft</span>
+                </div>
+              </div>
+            </div>
+            <!-- Property 1 -->
+            <div class="property-card">
+              <div class="property-img">
+                <img src="https://images.pexels.com/photos/3155666/pexels-photo-3155666.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Modern Villa" />
+                <span class="property-badge">For Sale</span>
+              </div>
+              <div class="property-info">
+                <div class="property-price">$1,250,000</div>
+                <h3>Modern Villa in Beverly Hills</h3>
+                <p class="property-address">123 Sunset Blvd, Los Angeles, CA</p>
+                <div class="property-features">
+                  <span class="feature"><i>🛏️</i> 4 Beds</span>
+                  <span class="feature"><i>🚿</i> 3 Baths</span>
+                  <span class="feature"><i>📏</i> 3,200 sqft</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Property 2 -->
+            <div class="property-card">
+              <div class="property-img">
+                <img src="https://images.pexels.com/photos/261327/pexels-photo-261327.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Luxury Penthouse" />
+                <span class="property-badge">For Sale</span>
+              </div>
+              <div class="property-info">
+                <div class="property-price">$3,750,000</div>
+                <h3>Luxury Penthouse in Manhattan</h3>
+                <p class="property-address">
+                  456 Central Park West, New York, NY
+                </p>
+                <div class="property-features">
+                  <span class="feature"><i>🛏️</i> 3 Beds</span>
+                  <span class="feature"><i>🚿</i> 3.5 Baths</span>
+                  <span class="feature"><i>📏</i> 2,800 sqft</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Property 3 -->
+            <div class="property-card">
+              <div class="property-img">
+                <img src="https://images.pexels.com/photos/53610/large-home-residential-house-architecture-53610.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Waterfront Estate" />
+                <span class="property-badge">For Sale</span>
+              </div>
+              <div class="property-info">
+                <div class="property-price">$8,200,000</div>
+                <h3>Waterfront Estate in Miami</h3>
+                <p class="property-address">789 Ocean Drive, Miami, FL</p>
+                <div class="property-features">
+                  <span class="feature"><i>🛏️</i> 5 Beds</span>
+                  <span class="feature"><i>🚿</i> 6 Baths</span>
+                  <span class="feature"><i>📏</i> 6,500 sqft</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style="text-align: center; margin-top: 3rem">
+            <a href="properties.html" class="btn btn-outline"
+              >View All Properties</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="section testimonials">
+        <div class="container">
+          <div class="section-title">
+            <h2>What Our Clients Say</h2>
+            <p>Trusted by hundreds of happy clients</p>
+          </div>
+
+          <div class="testimonial-grid">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <p>
+                  The team at LuxuryEstates helped me find my dream home in
+                  record time. Their attention to detail and market knowledge is
+                  unmatched.
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-img">
+                  <img src="client1.jpg" alt="Sarah Johnson" />
+                </div>
+                <div class="author-info">
+                  <h4>Sarah Johnson</h4>
+                  <p>Homeowner</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <p>
+                  As an investor, I appreciate their honest advice and extensive
+                  network. They've helped me build a profitable portfolio.
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-img">
+                  <img src="client2.jpg" alt="Michael Chen" />
+                </div>
+                <div class="author-info">
+                  <h4>Michael Chen</h4>
+                  <p>Real Estate Investor</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <p>
+                  Professional, responsive, and truly cares about their clients.
+                  Sold my property above asking price in just 2 weeks!
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-img">
+                  <img src="client3.jpg" alt="David Rodriguez" />
+                </div>
+                <div class="author-info">
+                  <h4>David Rodriguez</h4>
+                  <p>Property Seller</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Agents Section -->
+      <section class="section">
+        <div class="container">
+          <div class="section-title">
+            <h2>Meet Our Agents</h2>
+            <p>Professional and dedicated real estate experts</p>
+          </div>
+
+          <div class="agent-grid">
+            <!-- Agent 1 -->
+            <div class="agent-card">
+              <div class="agent-img">
+                <img src="agent1.jpg" alt="Jennifer Lee" />
+              </div>
+              <h3>Jennifer Lee</h3>
+              <p>Senior Agent</p>
+              <p>Specializes in luxury properties and waterfront estates</p>
+              <div class="agent-social">
+                <a href="#"><i>📱</i></a>
+                <a href="#"><i>💼</i></a>
+                <a href="#"><i>📧</i></a>
+              </div>
+            </div>
+
+            <!-- Agent 2 -->
+            <div class="agent-card">
+              <div class="agent-img">
+                <img src="agent2.jpg" alt="Robert Taylor" />
+              </div>
+              <h3>Robert Taylor</h3>
+              <p>Commercial Specialist</p>
+              <p>Expert in investment properties and development</p>
+              <div class="agent-social">
+                <a href="#"><i>📱</i></a>
+                <a href="#"><i>💼</i></a>
+                <a href="#"><i>📧</i></a>
+              </div>
+            </div>
+
+            <!-- Agent 3 -->
+            <div class="agent-card">
+              <div class="agent-img">
+                <img src="agent3.jpg" alt="Maria Garcia" />
+              </div>
+              <h3>Maria Garcia</h3>
+              <p>Residential Agent</p>
+              <p>First-time homebuyer specialist</p>
+              <div class="agent-social">
+                <a href="#"><i>📱</i></a>
+                <a href="#"><i>💼</i></a>
+                <a href="#"><i>📧</i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h3>LuxuryEstates</h3>
+            <p>
+              Premium real estate services with a global network and local
+              expertise.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="properties.html">Properties</a></li>
+              <li><a href="agents.html">Agents</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3>Services</h3>
+            <ul class="footer-links">
+              <li><a href="#">Buying</a></li>
+              <li><a href="#">Selling</a></li>
+              <li><a href="#">Renting</a></li>
+              <li><a href="#">Property Management</a></li>
+              <li><a href="#">Investment Consulting</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3>Contact Us</h3>
+            <address>
+              <p>123 Luxury Avenue<br />Beverly Hills, CA 90210</p>
+              <p>Phone: (310) 555-1234<br />Email: info@luxuryestates.com</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2023 LuxuryEstates. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script> <!-- Link ke JS -->
+  </body>
+</html>
